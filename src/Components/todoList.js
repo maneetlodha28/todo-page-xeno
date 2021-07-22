@@ -36,7 +36,7 @@ const TodoList = ({ todos, setCompleted, completed, setTodos }) => {
 								<p class="text-muted">
 									{item.description}..<a href="/">Read More</a>
 								</p>
-                                <small class="text-muted time">{item.time}</small>
+								<small class="text-muted time">{item.time}</small>
 							</li>
 							{index !== todos.length - 1 ? <div class="border-black border-bottom divider" /> : null}
 						</div>

@@ -7,34 +7,34 @@ function App() {
 	const [ completed, setCompleted ] = useState([
     {
 			id: 4,
-			title: 'Checkingg 2',
-			description: 'Hello world',
+			title: 'Task 5',
+			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 			time: 'Tomorrow at 6 PM'
 		},
     {
 			id: 5,
-			title: 'Checkingg 2',
-			description: 'Hello world',
+			title: 'Task 4',
+			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 			time: 'Tomorrow at 6 PM'
 		},
   ]);
 	const [ todos, setTodos ] = useState([
 		{
 			id: 1,
-			title: 'Checkingg 1',
-			description: 'Hello world dfasflas fslfls f sl fsf',
+			title: 'Task 1',
+			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 			time: 'Today at 4:40PM'
 		},
 		{
 			id: 2,
-			title: 'Checkingg 2',
-			description: 'Hello world',
+			title: 'Task 2',
+			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 			time: 'Tomorrow at 6 PM'
 		},
 		{
 			id: 3,
-			title: 'Checkingg 3',
-			description: 'Hello world',
+			title: 'Task 3',
+			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 			time: 'Monday at 5 AM'
 		}
 	]);
@@ -55,7 +55,6 @@ function App() {
 					</div>
 				</div>
         <SearchBox/>
-
 				<TodoList todos={todos} setTodos={setTodos} completed={completed} setCompleted={setCompleted} />
 				<div class="border-black border-bottom"style={{color:"black"}} />
 				{completed.length?<CompletedList completed={completed} />:null}
