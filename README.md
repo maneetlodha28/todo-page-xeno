@@ -1,4 +1,4 @@
-# A Todo page layot for managing todos
+# A Todo page layout for managing todos
 This is a basic design built using Reactstrap which is a bootstrap package for React JS.
 
 # Getting Started with Create React App
