@@ -5,7 +5,7 @@ const TodoList = ({ todos, setCompleted, completed, setTodos }) => {
 	const handleCompleted = useCallback(
 		(id) => {
 			let newCompleted = todos.find((item) => item.id === id);
-			completed.push(newCompleted);
+			completed.unshift(newCompleted);
 			setCompleted(completed);
 			let updatedTodoList = todos.filter((item) => item.id !== id);
 			setTodos(updatedTodoList);
@@ -26,8 +26,8 @@ const TodoList = ({ todos, setCompleted, completed, setTodos }) => {
 									className="checkbox"
 									id={index}
 									type="radio"
-									defaultChecked={false}
-									onClick={() => handleCompleted(item.id)}
+									checked={false}
+									onChange={() => handleCompleted(item.id)}
 								/>
 								<span className="title">{item.title}</span>
 								<span className="float-right">
@@ -42,7 +42,7 @@ const TodoList = ({ todos, setCompleted, completed, setTodos }) => {
 						</div>
 					))
 				) : (
-					<h5 class="text-center">No To Do's</h5>
+					<h5 className="text-center">No To Do's</h5>
 				)}
 			</ul>
 		</div>
