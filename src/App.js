@@ -5,19 +5,19 @@ import SearchBox from './Components/SearchBox/searchBox';
 import TodoList from './Components/todoList';
 function App() {
 	const [ completed, setCompleted ] = useState([
-    {
+		{
 			id: 4,
 			title: 'Task 5',
 			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 			time: 'Tomorrow at 6 PM'
 		},
-    {
+		{
 			id: 5,
 			title: 'Task 4',
 			description: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry.',
 			time: 'Tomorrow at 6 PM'
-		},
-  ]);
+		}
+	]);
 	const [ todos, setTodos ] = useState([
 		{
 			id: 1,
@@ -54,10 +54,10 @@ function App() {
 						</button>
 					</div>
 				</div>
-        <SearchBox/>
+				<SearchBox />
 				<TodoList todos={todos} setTodos={setTodos} completed={completed} setCompleted={setCompleted} />
-				<div className="border-black border-bottom"style={{color:"black"}} />
-				{completed.length?<CompletedList completed={completed} />:null}
+				<div className="border-black border-bottom" style={{ color: 'black' }} />
+				{completed.length ? <CompletedList completed={completed} /> : null}
 			</div>
 		</div>
 	);
