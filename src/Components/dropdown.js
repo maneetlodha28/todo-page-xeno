@@ -9,7 +9,7 @@ const Dropdown = () => {
 	return (
 		<div>
 			<ButtonDropdown isOpen={dropdownOpen} toggle={toggle}>
-				<Button id="caret" outline color="secondary" class="border">
+				<Button id="caret" outline color="secondary" className="border">
 					Edit
 				</Button>
 				<DropdownToggle split outline color="secondary" border="true" />

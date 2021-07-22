@@ -40,23 +40,23 @@ function App() {
 	]);
 	return (
 		<div>
-			<nav class="navbar navbar-dark bg-primary" />
-			<div class="container my-5">
-				<div class="row">
-					<div class="col-md">
+			<nav className="navbar navbar-dark bg-primary" />
+			<div className="container my-5">
+				<div className="row">
+					<div className="col-md">
 						<h1>
 							<strong>To Do List</strong>
 						</h1>{' '}
 					</div>
-					<div class="col-md text-right">
-						<button type="button" class="btn btn-primary">
+					<div className="col-md text-right">
+						<button type="button" className="btn btn-primary">
 							Add To Do
 						</button>
 					</div>
 				</div>
         <SearchBox/>
 				<TodoList todos={todos} setTodos={setTodos} completed={completed} setCompleted={setCompleted} />
-				<div class="border-black border-bottom"style={{color:"black"}} />
+				<div className="border-black border-bottom"style={{color:"black"}} />
 				{completed.length?<CompletedList completed={completed} />:null}
 			</div>
 		</div>
